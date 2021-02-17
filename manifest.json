@@ -1,0 +1,9 @@
+{
+  "name": "Papabot",
+  "short_name": "Papabot",
+  "lang": "ru-RU",
+  "start_url": "/",
+  "display": "browser",
+  "theme_color": "#dd4b77",
+  "orientation": "portrait"
+}

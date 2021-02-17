@@ -1,0 +1,47 @@
+@import "~@styles/variables.scss";
+@import '~@styles/media.scss';
+
+
+.tabs-container {
+  width: 300px;
+  display: flex;
+  justify-content: stretch;
+  background: $menu-title-active-background;
+  flex-direction: row;
+  @include _650{
+    width: 100vw;
+  }
+}
+
+.tab-title{
+  font-size: 16px;
+}
+
+.tab-item {
+  width: 50%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: $menu-title-active-background;
+
+  svg {
+    margin-right: 5px;
+  }
+
+  &:hover {
+    background: $primary-blue-dark;
+  }
+
+  &.active {
+    background: $primary-blue;
+  }
+
+  @include landscape{
+    height: 43px;
+  }
+    @include _650{
+   height: 50px;
+  }
+}

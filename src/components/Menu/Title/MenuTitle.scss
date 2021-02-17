@@ -1,0 +1,87 @@
+@import "~@styles/variables.scss";
+
+$main: 'menu-title';
+
+.#{$main} {
+  height: 10px;
+  font-size: 15px;
+  padding-right: 24px;
+  padding-left: 24px;
+  display: flex;
+  border: 0px solid $primary-blue;
+  align-items: center;
+  cursor: pointer;
+  background-color:  $primary-blue;
+  transition: all 0.3s;
+
+  &__icon {
+    flex-shrink: 0;
+    flex-basis: 20px;
+    flex-grow: 0;
+    margin-right: 20px;
+
+    use {
+      fill: $primary-blue;
+    }
+  }
+
+  &__label {
+    display: inline-block;
+    overflow: hidden;
+    max-width: 100%;
+    transition: all 0.15s;
+    color: $primary-blue;
+    opacity: 1;
+  }
+
+  &__chevron {
+    margin-left: auto;
+    width: 12px;
+    height: 12px;
+  }
+
+  &--collapsed {
+    .#{$main} {
+      &__label {
+        opacity: 0;
+        max-width: 0;
+      }
+
+      &__chevron {
+        display: none;
+      }
+
+      &__icon {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &--is-active {
+    background-color: $primary-blue;
+
+    .#{$main} {
+      &__label {
+        color: $primary-blue;
+      }
+    }
+
+    use {
+      fill: $primary-blue;
+    }
+  }
+
+  &--is-hover {
+    background-color: $primary-blue;
+
+    .#{$main} {
+      &__label {
+        color: $primary-blue;
+      }
+    }
+
+    use {
+      fill: $primary-blue;
+    }
+  }
+}

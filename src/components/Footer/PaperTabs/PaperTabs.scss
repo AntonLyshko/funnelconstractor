@@ -1,0 +1,70 @@
+@import "~@styles/variables.scss";
+
+.paper-tabs {
+  display: flex;
+  align-items: stretch;
+
+  &__wrap {
+    display: flex;
+    align-items: stretch;
+
+    border-right: 1px solid #ddd;
+  }
+
+  .ant-btn {
+    border-radius: 0 !important;
+
+    &:focus {
+      color: inherit !important;
+    }
+
+    //&:hover {
+    //  background-color: $menu-list-item-hover-background;
+    //  color: $menu-list-item-hover-color;
+    //}
+    //
+    //&:active {
+    //  background-color: $menu-list-item-active-background;
+    //  color: $menu-list-item-active-color !important;
+    //}
+  }
+
+  &__button {
+    height: 100%;
+    border: none;
+    //todo: странно. Не выравнивается вертикально
+    //line-height: 30px;
+    border-radius: 0;
+    font-size: 12px;
+    font-family: 'DINPro', sans-serif;
+
+    &--is-active {
+      font-weight: 500;
+    }
+  }
+
+  &__button-control {
+    .ant-btn {
+      height: 100%;
+      border: none;
+      //todo: странно. Не выравнивается вертикально
+      //line-height: 30px;
+      border-radius: 0;
+      font-size: 12px;
+      font-family: 'DINPro', sans-serif;
+    }
+
+    .anticon {
+      font-size: 12px;
+      position: relative;
+      top: 3px;
+    }
+  }
+
+}
+
+.graph-generator-btn {
+  font-size: 12px;
+  border-radius: 0 !important;
+  border: none !important;
+}

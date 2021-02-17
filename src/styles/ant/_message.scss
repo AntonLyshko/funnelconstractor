@@ -1,0 +1,12 @@
+@import "~@styles/media.scss";
+
+.ant-message {
+  padding-left: 175px;
+  @include _650 {
+    padding-left: 0px;
+  }
+}
+
+.ant-message-notice {
+  text-align: left;
+}

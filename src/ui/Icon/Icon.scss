@@ -1,0 +1,82 @@
+@import "~@styles/variables.scss";
+
+
+.green {
+  use {
+    fill: $green-origin !important;
+  }
+}
+
+.blue {
+  use {
+    fill: $blue-origin !important;
+  }
+}
+
+
+.white {
+  use {
+    fill: $light-grey !important;
+  }
+}
+
+.red {
+  use {
+    fill: $red-origin !important;
+  }
+}
+
+.icon-x {
+  width: 35px !important;
+  height: 25px !important;
+}
+
+.icon-l {
+  width: 30px !important;
+  height: 30px !important;
+}
+
+.icon-m {
+  width: 24px !important;
+  height: 24px !important;
+}
+
+.icon-s {
+  width: 18px !important;
+  height: 18px !important;
+}
+
+
+.page404-icon {
+  width: 338px !important;
+  height: 214px !important;
+}
+
+
+.icon {
+  width: 16px;
+  height: 16px;
+
+  svg {
+    width: 1em;
+    height: 1em;
+  }
+
+  use {
+    fill: $icon-color;
+  }
+
+
+  &--is-spin {
+    animation: spin 2s linear infinite;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,94 @@
+@import "~@styles/variables.scss";
+@import "~@styles/media.scss";
+
+.ant-layout-sider-children {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+  margin-left: 3px;
+}
+
+.menu-toggle {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.sider-left {
+  transition: .1s;
+  width: 100vw;
+  z-index: 99;
+  left: 0;
+  height: 120px;
+  color: #fff;
+  position: relative;
+  background: $primary-blue;
+
+  &__brand {
+    padding: 0px 12px 0px 22px;
+  }
+
+  @include landscape {
+    transition: ease-in-out .3s;
+    height: 100vh;
+    width: 72px;
+
+    &.active {
+      width: 210px;
+    }
+  }
+
+  @include _650 {
+    transition: ease-in-out .3s;
+    height: 116px !important;
+    width: 100vw !important;
+
+    &.active {
+      height: 210px !important;
+    }
+  }
+
+  @include _480 {
+    &.active {
+      height: 180px !important;
+    }
+  }
+}
+
+.menu-title__label {
+  @include landscape {
+    display: none;
+  }
+}
+
+.menu__category {
+  position: relative;
+  top: 0;
+}
+
+.ant-layout {
+  @include _650 {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+
+.brand {
+  padding: 0px 30px 9px 0px;
+
+  @include _650 {
+    padding: 0px 5px 9px 0px;
+    width: 40px;
+    overflow: hidden;
+  }
+}
+
+.brand__wrapper {
+  position: relative;
+  top: 4px;
+}

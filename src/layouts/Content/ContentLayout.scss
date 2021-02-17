@@ -1,0 +1,21 @@
+
+@import '~@styles/media.scss';
+
+
+.content-layout {
+  height: 100%;
+}
+
+.site-layout{
+  position: relative;
+  height: calc(100% - 120px) !important;
+  min-height: calc(100% - 120px) !important;
+  @include landscape{
+    height: 100% !important;
+    min-height: 100% !important;
+  }
+  @include _650{
+    height: calc(100% - 105px) !important;
+    min-height: calc(100% - 105px) !important;
+  }
+}

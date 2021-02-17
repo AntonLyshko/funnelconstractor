@@ -1,0 +1,36 @@
+.control {
+  display: flex;
+  align-items: center;
+
+  &__button {
+    .ant-btn {
+      background-color: #27AE60;
+      border-color: #27AE60 !important;
+      padding: 4.4px 15px;
+      height: 36px !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px !important;
+
+      .icon {
+        width: 12px;
+        height: 12px;
+
+        use {
+          fill: #fff;
+        }
+      }
+    }
+
+    .ant-btn-primary {
+      margin-right: 2px;
+
+    }
+  }
+
+  &__icon-power {
+    margin-right: 5px;
+  }
+
+}
